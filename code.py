@@ -3,6 +3,7 @@ import os
 import sys
 
 urls = (
+    '/about', 'about',
     '/.*', 'index'
 )
 
@@ -12,5 +13,8 @@ class index:
     def GET(self):
         return render.index()
 
+class about:
+    def GET(self):
+        return render.about()
 application = web.application(urls, globals()).wsgifunc()
 
