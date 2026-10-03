@@ -1,0 +1,99 @@
+# KENWELL TX Platform
+
+An enterprise token management system, automated AI chatbot orchestration engine, and high-performance network proxy pipeline designed for the **KENWELL-TX-ORG** ecosystem. 
+
+This platform seamlessly bridges data ingestion pipelines, customs compliance logging matrix networks, and structural security governance architectures.
+
+---
+
+## ⚡ System Architecture Topology
+
+The application operates as a decoupled, dual-engine infrastructure layout managed concurrently to guarantee isolation, high throughput, and database transaction integrity:
+
+```text
+               [ Desktop Web UI Workspace Client ]
+                               │
+                       ( HTTP Port 8000 )
+                               ▼
+               [ Kenwell Python Proxy Gateway ] (Kenwell.py)
+                               │
+                       ( HTTP Port 3000 )
+                               ▼
+          [ Express Core Transaction Engine ] (server.js)
+                               │
+                  ( SQLite Persistent Storage )
+                         (database.db)
+```
+
+1. **Client Desktop Workspace Layer**: A responsive dark-mode control interface styled with Tailwind CSS, supporting automated data classification pipelines and integrated telemetry testing matrices.
+2. **Kenwell Python Proxy Gateway (Port 8000)**: A lightweight, high-performance orchestration layer handling secure payload forwarding, active CORS overrides, and AI-assisted chatbot session abstraction lines.
+3. **Express Core Database Engine (Port 3000)**: A persistent backend engine running under **PM2** process daemons to coordinate intelligence ingestion writes and SQLite local disk interactions.
+
+---
+
+## 📂 Repository Layout Blueprint
+
+```text
+.
+├── server.js                        # Express Core Ingestion Engine (Port 3000)
+├── Kenwell.py                       # Python Orchestration Network Proxy (Port 8000)
+├── database.db                      # Persistent Local SQLite Datastore
+├── PILOT_ROADMAP.md                 # 90-Day Strategic Rollout Schedule Matrix
+├── README.md                        # Primary Enterprise Operations Guide
+├── templates/
+│   └── about.html                   # Professional Profile View Component Block
+└── src/
+    └── components/
+        └── tradexpress-workspace.html # Unified Dark-Mode Visual Control Dashboard
+```
+
+---
+
+## 🚀 Core Module Specifications
+
+### 🤖 1. AI Assistant Portal & Ingestion Engine
+Allows immediate parsing and generation of global intelligence records. Contains explicit data structures to log structured data feeds right into the persistent engine, supporting restricted distribution visibility rules (Premium vs. Draft).
+
+### 🌍 2. Customs Tariff Engine (AHTN Compliance)
+An automated customs nomenclature engine tracking trade operations. It ingests standard 6-digit commodity markers and formats them directly into **8-Digit precision strings (`081340.00`)**, ensuring compliance bounds match ASEAN Zone structural rules.
+
+### 📈 3. Greencore Coordinate Scale (Enterprise Tier)
+An enterprise-grade operating module layer designed to oversee green trade network loops at scale. It embeds specialized components for:
+* Enterprise Procurement Pipelines
+* Advanced AI-Assisted Supplier Comparison Matrices
+* Cargo Telemetry Monitoring Requests
+* End-to-End International Logistics Coordination
+
+---
+
+## 🛠️ Local Deployment & Startup Flow
+
+### 📋 Prerequisites
+Ensure your host machine has Node.js (LTS), PM2, and Python 3 installed.
+
+### 1. Launch the Cluster Environments on your Ubuntu Server
+Initialize your background application processes under persistent daemon controls:
+```bash
+# Step into the repository directory root
+cd /home/tx/tradexpress-app
+
+# Install explicit database configuration drivers
+npm install mysql2 sqlite3 express cors
+
+# Fire up and register the dual-engine process array
+pm2 start server.js --name "kenwell-tx-core-engine"
+pm2 start Kenwell.py --name "kenwell-tx-python-proxy" --interpreter python3
+
+# Lock the configuration into PM2 daemon memory records
+pm2 save
+```
+
+### 2. Access the Visual Workspaces
+* **OS Telemetry Panel (Cockpit)**: Navigate your web browser to `https://192.168.100.11:9090` to visually inspect CPU, Memory, and System Services streams.
+* **Control Dashboard**: Right-click `src/components/tradexpress-workspace.html` on your desktop machine and open it natively inside Google Chrome or Microsoft Edge. Set your selector node to **Port 8000** to execute live data pings.
+
+---
+
+## 🛡️ Enterprise Development Sign-Off Rules
+* **Code Signing Privacy**: Always sign local Git contributions using your anonymous fallback obfuscation email string (`id+username@users.noreply.github.com`) to protect server network metadata profiles.
+* **Database Operations**: Do not bundle raw SQLite persistent binaries directly into serverless cloud runtimes like Vercel. Keep your serverless frontend assets cleanly decoupled from your physical database core node hardware.
